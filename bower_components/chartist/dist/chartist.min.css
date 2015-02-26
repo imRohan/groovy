@@ -10,18 +10,20 @@
     width: 100%;
     height: 100%;
     fill: rgba(0, 0, 0, .4);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: .75rem;
-    text-align: left
+    color: rgba(255, 255, 255, 1);
+    font-size: .95rem;
+    text-align: left;
+    font-weight:700;
 }
 .ct-chart .ct-label.ct-vertical {
     display: block;
     width: 100%;
     height: 100%;
     fill: rgba(0, 0, 0, .4);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: .75rem;
-    text-align: right
+    color: rgba(255, 255, 255, 1);
+    font-size: .95rem;
+    text-align: right;
+    font-weight:700;
 }
 .ct-chart .ct-grid {
     stroke: rgba(255, 255, 255, .8);
@@ -29,12 +31,12 @@
     stroke-dasharray: 2px
 }
 .ct-chart .ct-point {
-    stroke-width: 10px;
+    stroke-width: 3px;
     stroke-linecap: round
 }
 .ct-chart .ct-line {
     fill: none;
-    stroke-width: 4px
+    stroke-width: 2px
 }
 .ct-chart .ct-area {
     stroke: none;
@@ -52,7 +54,7 @@
 .ct-chart .ct-series.ct-series-a .ct-line,
 .ct-chart .ct-series.ct-series-a .ct-point,
 .ct-chart .ct-series.ct-series-a .ct-slice.ct-donut {
-    stroke: #d70206
+    stroke: white;
 }
 .ct-chart .ct-series.ct-series-a .ct-area,
 .ct-chart .ct-series.ct-series-a .ct-slice:not(.ct-donut) {

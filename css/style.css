@@ -12,6 +12,7 @@
 - Forms
 - Lists
 - Code
+- Graphs
 - Tables
 - Spacing
 - Utilities
@@ -440,6 +441,12 @@ pre > code {
     padding: 1rem 1.5rem;
     white-space: pre;
 }
+
+/* Graphs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#keywordGraph {
+    margin-left:-45px;
+}
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -575,3 +582,4 @@ hr {
 /* Larger than Desktop HD */
 
 @media (min-width: 1200px) {}
+
