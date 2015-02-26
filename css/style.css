@@ -173,7 +173,6 @@ html {
 }
 body {
     font-size: 1.5em;
-    /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -251,6 +250,11 @@ h6 {
 }
 p {
     margin-top: 0;
+}
+
+.small{
+    margin-top:-15px;
+ font-size: 0.8em; !important
 }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -498,7 +502,7 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 hr {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3.5rem;
     border-width: 0;
     border-top: 1px solid #E1E1E1;
