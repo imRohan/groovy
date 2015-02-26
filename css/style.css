@@ -177,7 +177,7 @@ body {
     font-weight: 400;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-    background: linear-gradient(270deg, #E86AFF, #8A65E8, #658EFF, #65CEE8, #80FFD1);
+    background: linear-gradient(270deg, #E86AFF, #8A65E8, #658EFF, #65CEE8, #5df5be);
     background-size: 800% 800%;
     -webkit-animation: GroovyBackground 30s ease infinite;
     -moz-animation: GroovyBackground 30s ease infinite;
@@ -253,8 +253,8 @@ p {
 }
 
 .small{
-    margin-top:-15px;
- font-size: 0.8em; !important
+    margin-top:-5%;
+    font-size: 0.8em; !important
 }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -502,7 +502,7 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 hr {
-    margin-top: 1rem;
+    margin-top: -3%;
     margin-bottom: 3.5rem;
     border-width: 0;
     border-top: 1px solid #E1E1E1;

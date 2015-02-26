@@ -19,9 +19,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
+
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- chartist
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="bower_components/chartist/dist/chartist.js"></script>
+    <link href="bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 
@@ -33,18 +40,25 @@
             <div class="one-half column" style="margin-top: 5%">
                 <h1>Groovy</h1>
                 <p class="small">
-                    groovy (adj.) | \ˈgrü-vē\
-                    <br/>1853 in literal sense of "pertaining to a groove," from groove (n.) + -y (2). Slang sense of "first-rate, excellent" is 1937, American English, from jazz slang phrase in the groove (1932) "performing well (without grandstanding)." As teen slang for "wonderful," it dates from c.1941; popularized 1960s, out of currency by 1980. Related: Grooviness.
+                    <strong>groovy (adj.) | \ˈgrü-vē\ </strong>
+                    <br/>1853 in literal sense of "pertaining to a groove," from groove (n.) + -y (2). Slang sense of "first-rate, excellent" is 1937, American English, from jazz slang phrase in the groove (1932) "performing well (without grandstanding)." As teen slang for "wonderful," it dates from c.1941; popularized 1960s, out of currency by 1980.
                 </p>
                 <hr>
             </div>
 
         </div>
 
+        <div class="row">
+
+            <div class="ct-chart ct-minor-sixth"></div>
+
+
+        </div>
+
 
     </div>
 
-     <!-- Javascript End Load
+    <!-- Javascript End Load
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="js/randomColor.js"></script>
     <script>
@@ -52,8 +66,11 @@
             count: 10,
             hue: 'green'
         });
-        //alert(colors[0]);
+         //alert(colors[0]);
     </script>
+
+    <!-- Chart -->
+    <script src="js/dataLoad.js"></script>
 
 </body>
 
