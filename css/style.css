@@ -266,10 +266,11 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a {
-    color: #1EAEDB;
+    color: #fff;
+    text-decoration: none;
 }
 a:hover {
-    color: #0FA0CE;
+    color: #d6d7d7;
 }
 /* nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -278,16 +279,43 @@ a:hover {
  height:25px;
  color:#fff;
  background-color: rgba(255,255,255,0.5);
+    position:fixed;
 }
 #back{
  display: inline-block;
  margin-left: 30px;
- width:100px;
+ width:200px;
  height:25px;
  background-image: url(../images/back.png);
  background-repeat: no-repeat;
+ padding-left: 40px;
     
     
+}
+#popOut{
+ display: inline-block;
+ float:right;
+ width:50px;
+ height:25px;
+ background-image: url(../images/popout.png);
+ background-repeat: no-repeat;
+ text-align: left;
+    right:0;
+    
+    
+}
+.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+.headroom--unpinned {
+    top: -100px;
+}
+.headroom--pinned {
+    top: 0;
 }
 
 /* Buttons
@@ -301,7 +329,7 @@ input[type="button"] {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-    color: #555;
+    color: #fff;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -312,7 +340,7 @@ input[type="button"] {
     white-space: nowrap;
     background-color: transparent;
     border-radius: 4px;
-    border: 1px solid #bbb;
+    border: 1px solid #fff;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -326,8 +354,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-    color: #333;
-    border-color: #888;
+    color: #f1f1f1;
+    background-color: rgba(255,255,255,0.3);
     outline: 0;
 }
 .button.button-primary,

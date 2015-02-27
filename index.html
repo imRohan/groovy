@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Lovingly crafted by Rohan Likhite -->
 
 <head>
 
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/goalProgress.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 
     <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,10 +40,20 @@
 
 <body>
 
-<div id="nav">
-<a target="_blank" href="http://rohanlikhite.com"><div id="back"></div></a>
-</div>
-    <div class="container">
+    <div id="nav" class="animated fadeInDown">
+
+        <a target="_blank" href="http://rohanlikhite.com">
+            <div id="back">Back</div>
+        </a>
+        <a target="_blank" href="http://rohanlikhite.com">
+            <div id="popOut"></div>
+        </a>
+
+
+        
+
+    </div>
+    <div class="container animated fadeIn">
         <div class="row">
             <div class="one-half column" style="margin-top: 5%">
                 <h1>Groovy</h1>
@@ -54,13 +66,17 @@
                         <li>Groovy is where the far out goes, man!</li>
 
                     </ol>
+                    <a class="button" href="#">Download CSV</a>
                 </p>
 
             </div>
             <div class="one-half column" style="margin-top: 8%">
                 <h4>History</h4>
                 <p class="small">
-                    The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1930s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent. (Word-Detective.com)
+                    The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1930s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent.
+                </p>
+                <p class="smallCitation">
+                    <a target="_blank" href="http://www.word-detective.com/2009/03/groovy/">Source: Word-Detective</a>
                 </p>
                 <hr>
             </div>
@@ -69,7 +85,7 @@
 
         <div class="row">
             <div class="twelve column">
-                <h3>Popularity <small>1960 - 2010</small></h3>
+                <h3>Popularity <small>1960 - 2007</small></h3>
                 <div id="keywordGraph" class="ct-chart"></div>
                 <p class="smallCitation u-pull-right ">Source: NGRAM</p>
             </div>
@@ -96,16 +112,16 @@
                 <span class="smallCitation">Source: Google</span>
             </div>
             <div class="eight columns">
-                <h4>Fun Facts</h4>
+                <h4>Trivia</h4>
                 <ul>
                     <li>Recorded use of the word in its slang context has been found dating back to September 30, 1941</li>
                     <li>"Groovy" is Duke Nukem's catchphrase</li>
                     <li>Marvel Comics produced a Silver Age comic book entitled Groovy, subtitled "Cartoons, gags, jokes."</li>
                     <li>Groovy is a powerful, optionally typed and dynamic programming language, with static-typing and static compilation capabilities, for the Java platform</li>
                     <li>Austin Powers says the word groovy a total of 12 times</li>
-                    <span class="smallCitation">Source: Wikipedia</span>
+                    <span class="smallCitation"><a target="_blank" href="http://en.wikipedia.org/wiki/Groovy">Source: Wikipedia</a></span>
                 </ul>
-                
+
             </div>
         </div>
 
@@ -114,6 +130,11 @@
 
     <!-- Javascript End Load
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="js/headroom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.headroom.js"></script>
+    <script type="text/javascript">
+        $("#nav").headroom();
+    </script>
     <script src="js/randomColor.js"></script>
     <script>
         var colors = randomColor({
@@ -122,58 +143,10 @@
         });
          //alert(colors[0]);
     </script>
-
-    <script>
-        $(document).ready(function () {
-            $('#country_1').goalProgress({
-                goalAmount: 100,
-                currentAmount: 100,
-                textBefore: '',
-                textAfter: ''
-            });
-            $('#country_2').goalProgress({
-                goalAmount: 100,
-                currentAmount: 62,
-                textBefore: '',
-                textAfter: ''
-            });
-            $('#country_3').goalProgress({
-                goalAmount: 100,
-                currentAmount: 44,
-                textBefore: '',
-                textAfter: ''
-            });
-            $('#country_4').goalProgress({
-                goalAmount: 100,
-                currentAmount: 21,
-                textBefore: '',
-                textAfter: ''
-            });
-            $('#country_5').goalProgress({
-                goalAmount: 100,
-                currentAmount: 20,
-                textBefore: '',
-                textAfter: ''
-            });
-            $('#country_6').goalProgress({
-                goalAmount: 100,
-                currentAmount: 19,
-                textBefore: '',
-                textAfter: ''
-            });
-            $('#country_7').goalProgress({
-                goalAmount: 100,
-                currentAmount: 17,
-                textBefore: '',
-                textAfter: ''
-            });
-
-
-        });
-    </script>
-
     <!-- Chart -->
     <script src="js/dataLoad.js"></script>
+    <!-- Typed -->
+
 
 </body>
 
