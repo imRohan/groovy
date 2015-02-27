@@ -35,6 +35,7 @@
     <script src="bower_components/chartist/dist/chartist.js"></script>
     <link href="bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css" />
     <script src="js/goalProgress.min.js"></script>
+    <script src="js/jquery.leanModal.min.js"></script>
 
 </head>
 
@@ -45,7 +46,7 @@
         <a target="_blank" href="http://rohanlikhite.com">
             <div id="back">Back</div>
         </a>
-        <a target="_blank" href="http://rohanlikhite.com">
+        <a rel="leanModal" name="popOutText" href="#popOutText">
             <div id="popOut"></div>
         </a>
 
@@ -66,23 +67,27 @@
                         <li>Groovy is where the far out goes, man!</li>
 
                     </ol>
-                    <a class="button" href="#">Download CSV</a>
+                    <a class="button" href="#">Download Data</a>
+                
                 </p>
 
             </div>
             <div class="one-half column" style="margin-top: 8%">
                 <h4>History</h4>
                 <p class="small">
-                    The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1930s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent.
+                    The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1920s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent.
+                 
                 </p>
-                <p class="smallCitation">
-                    <a target="_blank" href="http://www.word-detective.com/2009/03/groovy/">Source: Word-Detective</a>
-                </p>
-                <hr>
+                <h5><img class="flag" src="images/usa.png"> 1920's Jazz Slang</h5>
+                
+               
+                
+                
+                
             </div>
 
         </div>
-
+<hr>
         <div class="row">
             <div class="twelve column">
                 <h3>Popularity <small>1960 - 2007</small></h3>
@@ -115,18 +120,27 @@
                 <h4>Trivia</h4>
                 <ul>
                     <li>Recorded use of the word in its slang context has been found dating back to September 30, 1941</li>
+                    <li>Austin Powers says the word groovy a total of 10 times</li>
                     <li>"Groovy" is Duke Nukem's catchphrase</li>
                     <li>Marvel Comics produced a Silver Age comic book entitled Groovy, subtitled "Cartoons, gags, jokes."</li>
                     <li>Groovy is a powerful, optionally typed and dynamic programming language, with static-typing and static compilation capabilities, for the Java platform</li>
-                    <li>Austin Powers says the word groovy a total of 12 times</li>
+                    
                     <span class="smallCitation"><a target="_blank" href="http://en.wikipedia.org/wiki/Groovy">Source: Wikipedia</a></span>
                 </ul>
 
             </div>
         </div>
+    
+    
 
 
     </div>
+    
+    
+    
+    <div id="popOutText">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero purus, convallis nec vestibulum eget, luctus vitae purus. Vestibulum non mauris et sem vulputate pellentesque ac a turpis. Ut vel lacus vitae justo vestibulum lobortis. Nunc ipsum ipsum, laoreet id dictum nec, fermentum vel purus. Maecenas nisl felis, faucibus non rutrum eu, sollicitudin sed ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent dignissim lacinia tempus. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Nulla accumsan pellentesque velit, a malesuada diam tristique a. Fusce eleifend magna erat, et imperdiet orci. Quisque sapien mauris, malesuada eu tristique pulvinar, placerat id ligula. Vivamus vitae viverra nulla. Donec eget turpis vel erat malesuada sodales.</p>
+		</div>
 
     <!-- Javascript End Load
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -147,7 +161,19 @@
     <script src="js/dataLoad.js"></script>
     <!-- Typed -->
 
-
+    <script type="text/javascript">
+			$(function() {
+    			$('a[rel*=leanModal]').leanModal({ top : 200,overlay : 0.9, closeButton: ".modal_close" });		
+			});
+		</script>
+<script>
+function showDiv() {
+    div1 = document.getElementById('w1');
+    div1.style.display = "none";
+    div2 = document.getElementById('w2');
+    div2.style.display = "block";
+}
+</script>
 </body>
 
 </html>
