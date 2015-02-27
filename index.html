@@ -18,30 +18,49 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/goalProgress.css">
 
-
+    <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- chartist
+    <!--Data Viz
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="bower_components/chartist/dist/chartist.js"></script>
     <link href="bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css" />
-
+    <script src="js/goalProgress.min.js"></script>
 
 </head>
 
 <body>
 
-
+<div id="nav">
+<a target="_blank" href="http://rohanlikhite.com"><div id="back"></div></a>
+</div>
     <div class="container">
         <div class="row">
             <div class="one-half column" style="margin-top: 5%">
                 <h1>Groovy</h1>
                 <p class="small">
                     <strong>groovy (adj.) | \ˈgrü-vē\ </strong>
-                    <br/>1853 in literal sense of "pertaining to a groove," from groove (n.) + -y (2). Slang sense of "first-rate, excellent" is 1937, American English, from jazz slang phrase in the groove (1932) "performing well (without grandstanding)." As teen slang for "wonderful," it dates from c.1941; popularized 1960s, out of currency by 1980.
+                    <br/>
+                    <ol class="small">
+                        <li>Very pleasant or very enjoyable; marvelous; wonderful; excellent; - expressing strong approval, usually of enjoyable experiences.</li>
+                        <li>Very chic; as, groovy clothes.</li>
+                        <li>Groovy is where the far out goes, man!</li>
+
+                    </ol>
+                </p>
+
+            </div>
+            <div class="one-half column" style="margin-top: 8%">
+                <h4>History</h4>
+                <p class="small">
+                    The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1930s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent. (Word-Detective.com)
                 </p>
                 <hr>
             </div>
@@ -49,10 +68,45 @@
         </div>
 
         <div class="row">
-            <h3>Popularity <small>1960 - 2010</small></h3>
-            <div id="keywordGraph" class="ct-chart"></div>
+            <div class="twelve column">
+                <h3>Popularity <small>1960 - 2010</small></h3>
+                <div id="keywordGraph" class="ct-chart"></div>
+                <p class="smallCitation u-pull-right ">Source: NGRAM</p>
+            </div>
 
+        </div>
 
+        <div class="row">
+            <div class="four columns">
+                <h4>Regional Interest</h4>
+                <p>New Zealand</p>
+                <div id="country_1"></div>
+                <p>Trinidad & Tobago</p>
+                <div id="country_2"></div>
+                <p>Belgium</p>
+                <div id="country_3"></div>
+                <p>Australia</p>
+                <div id="country_4"></div>
+                <p>United States</p>
+                <div id="country_5"></div>
+                <p>United Kingdom</p>
+                <div id="country_6"></div>
+                <p>Canada</p>
+                <div id="country_7"></div>
+                <span class="smallCitation">Source: Google</span>
+            </div>
+            <div class="eight columns">
+                <h4>Fun Facts</h4>
+                <ul>
+                    <li>Recorded use of the word in its slang context has been found dating back to September 30, 1941</li>
+                    <li>"Groovy" is Duke Nukem's catchphrase</li>
+                    <li>Marvel Comics produced a Silver Age comic book entitled Groovy, subtitled "Cartoons, gags, jokes."</li>
+                    <li>Groovy is a powerful, optionally typed and dynamic programming language, with static-typing and static compilation capabilities, for the Java platform</li>
+                    <li>Austin Powers says the word groovy a total of 12 times</li>
+                    <span class="smallCitation">Source: Wikipedia</span>
+                </ul>
+                
+            </div>
         </div>
 
 
@@ -67,6 +121,55 @@
             hue: 'green'
         });
          //alert(colors[0]);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#country_1').goalProgress({
+                goalAmount: 100,
+                currentAmount: 100,
+                textBefore: '',
+                textAfter: ''
+            });
+            $('#country_2').goalProgress({
+                goalAmount: 100,
+                currentAmount: 62,
+                textBefore: '',
+                textAfter: ''
+            });
+            $('#country_3').goalProgress({
+                goalAmount: 100,
+                currentAmount: 44,
+                textBefore: '',
+                textAfter: ''
+            });
+            $('#country_4').goalProgress({
+                goalAmount: 100,
+                currentAmount: 21,
+                textBefore: '',
+                textAfter: ''
+            });
+            $('#country_5').goalProgress({
+                goalAmount: 100,
+                currentAmount: 20,
+                textBefore: '',
+                textAfter: ''
+            });
+            $('#country_6').goalProgress({
+                goalAmount: 100,
+                currentAmount: 19,
+                textBefore: '',
+                textAfter: ''
+            });
+            $('#country_7').goalProgress({
+                goalAmount: 100,
+                currentAmount: 17,
+                textBefore: '',
+                textAfter: ''
+            });
+
+
+        });
     </script>
 
     <!-- Chart -->
