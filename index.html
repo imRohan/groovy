@@ -6,8 +6,8 @@
 
     <meta charset="utf-8">
     <title>Groovy | Rohan Likhite</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Another silly site">
+    <meta name="author" content="Rohan Likhite">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,25 +17,16 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/goalProgress.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 
-    <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!--Data Viz
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="bower_components/chartist/dist/chartist.js"></script>
-    <link href="bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css" />
-    <script src="js/goalProgress.min.js"></script>
-    <script src="js/jquery.leanModal.min.js"></script>
+
 
 </head>
 
@@ -51,7 +42,7 @@
         </a>
 
 
-        
+
 
     </div>
     <div class="container animated fadeIn">
@@ -67,8 +58,8 @@
                         <li>Groovy is where the far out goes, man!</li>
 
                     </ol>
-                    <a class="button" href="#">Download Data</a>
-                
+                    <a class="button" href="data/data.csv" download>Download Data</a>
+
                 </p>
 
             </div>
@@ -76,18 +67,18 @@
                 <h4>History</h4>
                 <p class="small">
                     The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1920s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent.
-                 
+
                 </p>
                 <h5><img class="flag" src="images/usa.png"> USA - 1920: Jazz Slang</h5>
-                
-               
-                
-                
-                
+
+
+
+
+
             </div>
 
         </div>
-<hr>
+        <hr>
         <div class="row">
             <div class="twelve column">
                 <h3>Popularity <small>1960 - 2007</small></h3>
@@ -124,66 +115,65 @@
                     <li>"Groovy" is Duke Nukem's catchphrase</li>
                     <li>Marvel Comics produced a Silver Age comic book entitled Groovy, subtitled "Cartoons, gags, jokes."</li>
                     <li>Groovy is a powerful, optionally typed and dynamic programming language, with static-typing and static compilation capabilities, for the Java platform</li>
-                    
+
                     <span class="smallCitation"><a target="_blank" href="http://en.wikipedia.org/wiki/Groovy">Source: Wikipedia</a></span>
                 </ul>
 
             </div>
         </div>
-    
-    
+
+
 
 
     </div>
-    
-    
-    
+
+
+
     <div id="popOutText">
         <div class="row">
-        <div class="twelve coloums">
-			<p>Thanks for checking out my small visualization. <br/>I hope to add more words in the near future. <br/>
-            -R</p>
+            <div class="twelve coloums">
+                <p>Thanks for checking out my small visualization.
+                    <br/>I hope to add more words in the near future.
+                    <br/>- Rohan
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="centerAll">
-        <img src="images/otis.png">
+                <img src="images/otis.png">
             </div>
         </div>
-		</div>
+    </div>
 
-    <!-- Javascript End Load
+    <!-- Javascript Quick n' Fast Load
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="js/headroom.min.js"></script>
-    <script type="text/javascript" src="js/jquery.headroom.js"></script>
+
+    <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
+    <!--Data Viz
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="bower_components/chartist/dist/chartist.js"></script>
+    <script type="text/javascript" src="js/output.min.js"></script>
     <script type="text/javascript">
         $("#nav").headroom();
-    </script>
-    <script src="js/randomColor.js"></script>
-    <script>
-        var colors = randomColor({
-            count: 10,
-            hue: 'green'
-        });
-         //alert(colors[0]);
     </script>
     <!-- Chart -->
     <script src="js/dataLoad.js"></script>
     <!-- Typed -->
 
     <script type="text/javascript">
-			$(function() {
-    			$('a[rel*=leanModal]').leanModal({ top : 200,overlay : 0.9, closeButton: ".modal_close" });		
-			});
-		</script>
-<script>
-function showDiv() {
-    div1 = document.getElementById('w1');
-    div1.style.display = "none";
-    div2 = document.getElementById('w2');
-    div2.style.display = "block";
-}
-</script>
+        $(function () {
+            $('a[rel*=leanModal]').leanModal({
+                top: 200,
+                overlay: 0.9,
+                closeButton: ".modal_close"
+            });
+        });
+    </script>
+ 
 </body>
 
 </html>
